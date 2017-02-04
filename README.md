@@ -1,0 +1,2 @@
+# geniushour
+This is for a school project
