@@ -1,13 +1,21 @@
 import time
 from datetime import date
 tlist = []
-
+dlist = []
+tuplist = []
+placelist = []
+place = ''
 
 print("Note! This code needs to be continuously run! ")
 
 
 while True:
     date = date.today()
+    
+    # sort assignments
+    
+    
+    
     print("") ## move these later
     print("")
     print("Menu:")
@@ -27,7 +35,9 @@ while True:
     print("")
     
     if op == 'new':
-        tlist.append(input("Task name?"))
+        tlist.append(input("Task name?  "))
+        place = input("Due date? (please write as 'yyyy/mm/dd'.)  ")
+        placelist = place.split('/')
         
     else:
         if (int(op) - 1) in range(0, len(tlist)):
